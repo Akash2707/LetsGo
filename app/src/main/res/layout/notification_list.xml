@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_top_et">
+
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:text="Name :"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sender_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_et"
+                android:layout_marginStart="@dimen/margin_top_et"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:layout_toEndOf="@id/sender_name"
+                android:layout_toRightOf="@id/sender_name"
+                android:text="Sender_name"
+                />
+
+
+            <TextView
+                android:id="@+id/sender_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_name"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:text="Gender : "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/sender_gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_name_tv"
+                android:layout_marginLeft="@dimen/margin_top_et"
+                android:layout_marginStart="@dimen/margin_top_et"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:layout_toEndOf="@id/sender_gender"
+                android:layout_toRightOf="@id/sender_gender"
+                android:text="Sender_gender" />
+
+
+            <TextView
+                android:id="@+id/sender_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_gender"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:text="Phone Number :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sender_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_gender"
+                android:layout_marginLeft="@dimen/margin_top_et"
+                android:layout_marginStart="@dimen/margin_top_et"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:layout_toEndOf="@id/sender_phone"
+                android:layout_toRightOf="@id/sender_phone"
+                android:text="Sender_phn" />
+
+            <TextView
+                android:id="@+id/sender_pass_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_phone"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:text="Passengers :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sender_pass_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sender_phone"
+                android:layout_marginLeft="@dimen/margin_top_et"
+                android:layout_marginStart="@dimen/margin_top_et"
+                android:layout_marginTop="@dimen/margin_top_et"
+                android:layout_toEndOf="@id/sender_pass_no"
+                android:layout_toRightOf="@id/sender_pass_no"
+                android:text="Sender_pass" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/sender_pass_no"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin_top_tv">
+
+                <Button
+                    android:id="@+id/accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:layout_weight="1"
+                    android:background="#ff7009"
+                    android:textColor="@color/white"
+                   />
+
+                <Button
+                    android:id="@+id/reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reject"
+                    android:background="#ff7009"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_top_et"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

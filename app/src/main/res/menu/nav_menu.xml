@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/main">
+        <item android:id="@+id/home"
+            android:icon="@mipmap/ic_home_white_24dp"
+            android:title="Home"/>
+
+        <item android:id="@+id/profile"
+            android:icon="@mipmap/ic_account_box_white_24dp"
+            android:title="Profile"/>
+
+        <item android:id="@+id/my_rides"
+            android:icon="@mipmap/ic_directions_car_white_24dp"
+            android:title="My Rides"/>
+
+        <item android:id="@+id/notifications"
+            android:icon="@mipmap/ic_notifications_white_24dp"
+            android:title="Notifications"/>
+
+        <item android:id="@+id/settings"
+            android:icon="@mipmap/ic_settings_white_24dp"
+            android:title="Settings"/>
+    </group>
+
+    <group android:id="@+id/sub_menu">
+        <item android:id="@+id/about"
+            android:icon="@mipmap/ic_info_white_24dp"
+            android:title="About"/>
+
+        <item android:id="@+id/logout"
+            android:icon="@mipmap/ic_keyboard_return_white_24dp"
+            android:title="Logout"/>
+    </group>
+
+</menu>

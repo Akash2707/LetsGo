@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/activity_get_ride_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_top_tv"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:text="@string/get_ride_text_route_details"
+            android:textSize="30sp" />
+
+        <!--<TextView
+            android:id="@+id/activity_get_ride_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_tv"
+            android:layout_marginBottom="@dimen/margin_top_tv"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:text="@string/ride_start_location"
+            android:textSize="18sp" />-->
+
+        <EditText
+            android:id="@+id/activity_get_ride_atv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_tv"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:background="@drawable/custom_edit_text"
+            android:elevation="@dimen/elevation_et"
+            android:hint="@string/ride_hint_start"
+            android:textColor="@color/text_color"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="false"
+            android:inputType="text" />
+
+        <!--<TextView
+            android:id="@+id/activity_get_ride_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_atv"
+            android:layout_marginBottom="@dimen/margin_top_tv"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:text="@string/ride_end_location"
+            android:textSize="18sp" />-->
+
+        <EditText
+            android:id="@+id/activity_get_ride_atv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_atv"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:background="@drawable/custom_edit_text"
+            android:textColor="@color/text_color"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="@dimen/elevation_et"
+            android:hint="@string/ride_hint_end"
+        android:inputType="text" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:layout_below="@id/activity_get_ride_atv1"
+            tools:context="com.sample.carpool.carpool.activities.MapsActivity" />
+
+        <EditText
+            android:id="@+id/get_ride_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:background="?attr/editTextBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:hint=" Select Offer Ride Date"
+            android:inputType="date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/get_ride_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_ride_date"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:background="?attr/editTextBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:hint=" Select Offer Ride Time"
+            android:inputType="time"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_get_ride_tv_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_ride_time"
+            android:layout_marginBottom="@dimen/margin_top_tv"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:elevation="@dimen/elevation_et"
+            android:text="@string/offer_ride_total_km"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_get_ride_tv_km_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/activity_get_ride_tv_km"
+            android:layout_alignBottom="@+id/activity_get_ride_tv_km"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/activity_get_ride_tv_km"
+            android:layout_toRightOf="@+id/activity_get_ride_tv_km"
+            android:elevation="@dimen/elevation_et"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_get_ride_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_tv_km_display"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et">
+
+            <EditText
+                android:id="@+id/activity_get_ride_passengers_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/get_ride_2_number_of_passengers" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/activity_get_ride_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_et"
+            android:layout_marginBottom="@dimen/margin_top_tv"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:elevation="@dimen/elevation_et"
+            android:text="@string/offer_ride_type"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/activity_get_ride_sp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_et"
+            android:layout_marginBottom="@dimen/margin_top_et"
+            android:layout_marginTop="@dimen/margin_top_et"
+            android:layout_toEndOf="@id/activity_get_ride_tv1"
+            android:layout_toRightOf="@id/activity_get_ride_tv1" />
+
+        <Button
+            android:id="@+id/activity_get_ride_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_get_ride_sp1"
+            android:layout_marginTop="@dimen/margin_top_btn"
+            android:background="@drawable/custom_btn"
+            android:text="@string/ride_done_btn"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ride_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_get_ride_btn"
+            android:layout_marginTop="@dimen/margin_top_tv"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

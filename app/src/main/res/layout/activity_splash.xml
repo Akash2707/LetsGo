@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_back">
+
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/logo"
+        android:text="@string/app_name"
+        android:textSize="30sp" />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@id/logo_main"
+       android:layout_centerInParent="true">
+
+       <TextView
+           android:id="@+id/tv_lets"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Let's"
+           android:textSize="35sp"
+           android:textColor="@color/colorAccent"
+           />
+       <TextView
+           android:id="@+id/tv_go"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="35sp"
+           android:layout_marginLeft="@dimen/margin_top_et"
+           android:text="Go"
+           android:textColor="@color/colorAccent"
+           android:layout_marginStart="@dimen/margin_top_et" />
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@null"
+        android:text="Next>>"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

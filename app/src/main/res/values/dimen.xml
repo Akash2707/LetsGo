@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="margin_top_logo">40dp</dimen>
+    <dimen name="margin_top_btn">32dp</dimen>
+    <dimen name="margin_top_et">6dp</dimen>
+    <dimen name="margin_top_tv">16dp</dimen>
+    <dimen name="margin_bottom">60dp</dimen>
+    <dimen name="elevation_et">4dp</dimen>
+    <dimen name="padding_et">4dp</dimen>
+    
+</resources>

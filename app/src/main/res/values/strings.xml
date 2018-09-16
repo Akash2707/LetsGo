@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Let\'s Go</string>
+    <string name="login_tv_create_account">Do not have an Account?<u>Sign Up</u></string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="login_et_email">Email</string>
+    <string name="login_et_password">Password</string>
+    <string name="login_bt_sign_in">Sign In</string>
+    <string name="login_bt_guest_sign_in">Guest sign in</string>
+    <string name="sign_up_et_first_name">First Name</string>
+    <string name="sign_up_et_last_name">Last Name</string>
+    <string name="sign_up_et_email">Email</string>
+    <string name="sign_up_et_mobile_number">Mobile Number</string>
+    <string name="sign_up_et_password">Password</string>
+    <string name="sign_up_et_confirm_password">Confirm Password</string>
+    <string name="sign_up_bt_sign_up">Sign Up</string>
+    <string name="sign_up_et_gender">Gender:</string>
+    <string name="sign_up_rb_male">Male</string>
+    <string name="sign_up_rb_female">female</string>
+    <string name="ride_start_location">Start Location:</string>
+    <string name="ride_hint_start">Enter Start Location</string>
+    <string name="activity_offer_ride_tv">Create Your ride</string>
+    <string name="ride_end_location">End Location:</string>
+    <string name="ride_hint_end">Enter End location</string>
+    <string name="ride_btn_next">Next</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="offer_ride2_ride_details">Vehicle Details</string>
+    <string name="offer_ride_2_hint_reg_no">Vehicle registration number</string>
+    <string name="offer_ride_2_hint_seat_no">Number of seats</string>
+    <string name="offer_ride_car_type">Car Type:</string>
+    <string name="offer_ride_brand">Brand:</string>
+    <string name="offer_ride_fuel_type">Fuel Type:</string>
+    <string name="offer_ride_driver_details">Driver Details</string>
+    <string name="offer_ride_driver_name">Driver Name</string>
+    <string name="offer_ride_2_hint_rides_no">Number of rides offered</string>
+
+    <string name="home_fragment">Home fragment</string>
+    <string name="my_rides_fragment">My Rides fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
+    <string name="settings_fragment">Settings fragment</string>
+    <string name="about_fragment">About fragment</string>
+    <string name="offer_ride_enter_price_km">Enter Price/Km</string>
+    <string name="offer_ride_type">Ride Type:</string>
+    <string name="ride_done_btn">Done</string>
+    <string name="offer_ride_driver_age">Age</string>
+    <string name="offer_ride_driver_licence_number">Licence number</string>
+    <string name="offer_ride_total_amount">Total Amount:</string>
+    <string name="offer_ride_driver_mobile_number">Mobile number</string>
+    <string name="offer_ride_driver_driving_experience">Driving experience</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+
+
+    <string-array name="car_type">
+        <item> </item>
+        <item>Hatch Back</item>
+        <item>Sedan</item>
+        <item>SUV</item>
+    </string-array>
+
+    <string-array name="car_brand">
+        <item> </item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Maruti Suzuki</item>
+        <item>Tata</item>
+        <item>Toyota</item>
+        <item>Ford</item>
+        <item>Mahindra</item>
+        <item>Nissan</item>
+        <item>Volkswagen</item>
+        <item>Renault</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="fuel_type">
+        <item> </item>
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>Gas</item>
+    </string-array>
+
+    <string-array name="ride_type">
+        <item> </item>
+        <item>Single</item>
+        <item>Occasional</item>
+        <item>Daily</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_ride_text_route_details">Ride Request Details</string>
+    <string name="get_ride_2_passenger_details">Passenger Details</string>
+    <string name="get_ride_2_number_of_passengers">Number of Passengers</string>
+
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        <i>Place Id: %2$s</i>
+        <br/>
+        Address: %3$s
+        <br/>
+        Phone: %4$s
+        <br/>
+        Website: %5$s
+    ]]></string>
+    <string name="reset_pass_tv">Forgot Password</string>
+    <string name="reset_pass_instructions">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="reset_pass_email">Email</string>
+    <string name="reset_pass_btn">Reset Password</string>
+    <string name="reset_pass_back"><![CDATA[<< Back]]></string>
+    <string name="btn_forgot_your_password">Forgot your Password?</string>
+
+    <string name="offer_ride_total_km">Total Km:</string>
+    <string name="offer_ride_return_trip">Return Trip?</string>
+    <string name="offer_ride_rb_yes">Yes</string>
+    <string name="offer_ride_rb_no">No</string>
+    <string name="offer_ride_car_name">Car Name</string>
+    <string name="get_ride_available_rides">Available Rides</string>
+
+    <string name="about">\tLet\'s Go is the project developed by us, i.e Parth Pandya and Aakash Thakkar, as our final semester project. We are the students of Government Engineering College, Gandhinagar. Also we got a great support and guidance by our project guide Professor Pratik Barot for this project.\n\n
+        \tNow a days there are increasing problems of traffic, air pollution, fuel consumption, etc. mainly in the big cities where there are a lots of vehicle. In such cities there are a lot of people who travel everyday to their work place. And there are a lot of people who share common routes or destination. The basic idea behind our project is to give a medium to such people to communicate with other people who shares the same route.\n\n
+        \tThis will help reduce traffic, air pollution, fuel consumption and also the cost of daily travelling for our users.
+    </string>
+    <string name="about1"><![CDATA[<html>
+    <head></head>
+    <body style="text-align: justify">
+    \tLet\'s Go is the project developed by us, i.e Parth Pandya and Aakash Thakkar, as our final semester project. We are the students of Government Engineering College, Gandhinagar. Also we got a great support and guidance by our project guide Professor Pratik Barot for this project.\n\n
+        \tNow a days there are increasing problems of traffic, air pollution, fuel consumption, etc. mainly in the big cities where there are a lot of vehicles. In such cities there are many people who travel everyday to their work place. And there are many people who share common routes or destination. The basic idea behind our project is to give a medium to such people to communicate with other people who shares the same route and share the ride with them.\n\n
+        \tThis will help reduce traffic, air pollution, fuel consumption and also the cost of daily travelling for our users.
+    </body>
+    </html>]]></string>
+    <string name="about_title">About</string>
+    <string name="dialog_is_your_vehicle_already_registered">Is your vehicle already registered ?</string>
+    <string name="dialog_vehicle_yes">Yes</string>
+    <string name="dialog_vehicle_no">No</string>
+    <string name="dialog_vehicle_okay">Okay</string>
+    <string name="dialog_is_your_driver_already_registered">Is your driver already registered ?</string>
+
+
+    <string name="notification_add_to_cart_button">Like</string>
+    <string name="group_name">Group 1</string>
+    <string name="notifications_admin_channel_name">Global channel</string>
+    <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
+
+
+    <!--<string name="google_maps_key">AIzaSyBphoy0vCpUtrBIH4JkwPJyLIMJln6Ulvg</string>-->
+</resources>
